@@ -8,7 +8,7 @@ window.addEventListener('load', ()=> {
             lat = position.coords.latitude;
             long = position.coords.longitude;
 
-            fetch(`http://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${long}&exclude=hourly,minutely&units=metric&appid=${weather.weather_API}`)
+            fetch(`https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${long}&exclude=hourly,minutely&units=metric&appid=${weather.weather_API}`)
             .then((response)=>{
                 return response.json();
             })
